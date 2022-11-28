@@ -24,11 +24,18 @@ namespace AppWEB.Data.Repositório
         {
             return _jovemProgramadorContexto.Aluno.ToList();
         }
-        
+
+        public void EditarAluno(AlunoModel alunos)
+        {
+            _jovemProgramadorContexto.Aluno.Update(alunos);
+            _jovemProgramadorContexto.SaveChanges();
+        }
+
         public AlunoModel BuscarId(int id)
         {
             return _jovemProgramadorContexto.Aluno.FirstOrDefault(x => x.Id == id);
         }
+
         
 
         

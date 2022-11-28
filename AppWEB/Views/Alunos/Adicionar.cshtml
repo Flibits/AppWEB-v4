@@ -1,8 +1,8 @@
 ﻿@model AlunoModel
 
-<form asp-controller="Aluno" asp-action="InserirAluno" method="post"></form>
+<form asp-controller="Alunos" asp-action="InserirAluno" method="post">
 
-<form>
+
     <div class="form-group">
         <label for="exampleInputEmail1">Nome</label>
         <input type="text" asp-for="Nome" class="form-control" id="exampleInputNome">
@@ -23,9 +23,11 @@
         <label for="exampleInputCEP1">CEP</label>
         <input type="number" asp-for="CEP" class="form-control" id="exampleInputNumber" aria-describedby="numberHelp" placeholder="Ex.: 00000-000">
     </div>
+    
     <button type="submit" class="btn btn-dark">Enviar</button>
-</form>
 
-<div class="d-grid gap-2 d-md-flex justify-content-md-center">
-    <a class="btn btn-dark" type="button" asp-controller="Alunos" asp-action="Index">Voltar</a>
-</div>
+    <div class="d-grid gap-2 d-md-flex justify-content-md-center">
+        <a class="btn btn-dark" type="button" asp-controller="Alunos" asp-action="Index">Voltar</a>
+    </div>
+
+ </form>  

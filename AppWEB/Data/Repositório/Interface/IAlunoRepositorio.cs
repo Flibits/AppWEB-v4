@@ -8,5 +8,9 @@ namespace AppWEB.Data.Repositório.Interface
         void InserirAluno(AlunoModel alunos);
 
         List<AlunoModel> BuscarAlunos();
+
+        AlunoModel BuscarId(int id);
+        
+        void EditarAluno(AlunoModel alunos);
     }
 }

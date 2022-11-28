@@ -18,7 +18,7 @@ namespace AppWEB.Data.Mapeamento
 
             builder.Property(t => t.Nome).HasColumnType("varchar(50)");
             builder.Property(t => t.Idade).HasColumnType("int");
-            builder.Property(t => t.Contato).HasColumnType("varchar(15)");
+            builder.Property(t => t.Contato).HasColumnType("varchar(20)");
             builder.Property(t => t.Email).HasColumnType("varchar(40)");
             builder.Property(t => t.CEP).HasColumnType("varchar(10)");
 
